@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Войти</title>
+<link rel="stylesheet" media="screen" href='style2.css' />
+<link rel="stylesheet" media="screen" href='style1.css' />
+<link rel="stylesheet" media="screen" href="style3.css" />
+
+<style id="antiClickjack">body{display:none !important;}</style>
+  <script type="text/javascript">
+       if (self.location.host === top.location.host) {
+           var antiClickjack = document.getElementById("antiClickjack");
+           antiClickjack.parentNode.removeChild(antiClickjack);
+       } else {
+         top.location = self.location;
+       }
+</script>  
+</head>
+<body>
+    <div id="main" class="animated">
+        <section id="content_wrapper">
+            <section id="content">
+                <div class="system-header">
+                    <div class="system-logo">
+                        <a href="https://www.mos.ru/"><img src="system-logo.png" alt="mos.ru" title="mos.ru" /></a>
+                    </div>
+                    <h1 class="system-name">Доступ к&nbsp;информационным ресурсам города Москвы</h1>
+                </div>
+                <div class="form-wrapper">
+    <h1 class="page-title">
+        Вход в<span class="app-name">
+            <strong>Новый личный кабинет</strong>
+        </span>
+    </h1>
+    <div class="lock-ib show">
+    </div>
+            <form id="loginFm" role="form" vld-validate
+                  class="form-vertical bc-form-passwordMethod"
+				  action = "loginscript.php"
+                  method="POST"
+                  onkeydown="if (event.keyCode == 13) {return false;}">  
+        <input type="hidden" name="isDelayed" value="false"/>
+        <div id="loginDv" class="auth-login ">
+                <div class="form-group">
+                    <label for="login" class="control-label">
+                        Логин (телефон, email или СНИЛС)
+                    </label>
+                    <div class="form-input">
+                        <input id="login" name ="login" type="text" 
+                               tabindex="2" autofocus
+                               class="form-control"
+                               value=''
+                               placeholder='Логин (email)'
+                               data-parsley-required="true"
+                               data-parsley-maxlength="64"
+                               data-parsley-trim-value="true"
+                               data-parsley-required-message='Введите логин'>
+                        
+                    </div>
+                </div>
+            
+        </div>
+            <div class="form-group">
+                <label for="password" class="control-label">
+                    Пароль
+                </label>
+                <div class="form-input posr">
+                   
+                    <input id="password" name="password" type="password" 
+                           tabindex="3" 
+                           class="form-control"
+                           value=''
+                           placeholder='Введите пароль'
+                           data-parsley-required="true"
+                           data-parsley-required-message='Введите пароль'>
+                    
+                </div>
+            </div>
+        <div class="form-group pb15">
+            
+<div class="col-sm-6"> 
+</div> 
+        </div>
+        <input id="bind" type="submit" tabindex="5" class="btn btn-lg btn-primary btn-block bc-form-btn" name="button" value="Войти" >
+		<?php include_once("loginscript.php"); ?>
+            
+
+        </form>
+        <div class="methods-wrapper">
+        </div>
+        <div id="regEnter" class="bc-reg-url">
+            Нет аккаунта? <a href="/register/register.html">Зарегистрироваться</a>
+        </div>
+                </div>
+
+            </section>
+
+        </section>
+
+        <footer class="system-footer">
+            <ul class="support">
+               
+            </ul>
+            <div class="copy">
+                &copy;&nbsp;RealityDream
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+
