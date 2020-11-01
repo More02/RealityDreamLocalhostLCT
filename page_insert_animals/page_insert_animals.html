@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Побдор животных</title>
+	<style type="text/css">
+    #top_menu {
+	display: inline-block;
+    height: 90px;   
+    background-position: top center;
+	background-repeat:repeat-x;
+	margin-top:25px;
+	background:white;
+	width: 100%;
+	float:right;
+	border-radius: 10px;
+	margin-right:0;
+	font-size:18px;
+	font-family:'Serif Italic';
+	text-align:left;
+
+}
+
+ #top_menu ul {
+	list-style-type:none; 
+	margin-top:0;
+	padding-left:0;
+	padding-right:0;
+	line-height:90px;
+	
+}
+    
+    #top_menu ul li{
+	display: inline-block;
+	vertical-align:top;
+	color:#0C1014;
+	width:14%;
+	text-align:center;
+	
+}
+		
+    #top_menu ul li a {
+	text-decoration:none;
+	color:#0C1014;
+	
+}
+    .top_menu_li {
+	width:14%;
+	margin-top:0;
+}
+#imglogo {
+	height:70px;
+	width:70px;
+}
+   
+#top_menu  ul li {
+	height: 40px;
+	width:14%;
+}
+#all_content {
+	height:100%;
+	width:100%;
+}
+
+#middle {
+    width: 100%; 
+    
+    min-height: 3000px; 
+    float: right; 
+	margin:auto 0 300px 0px;
+	font-size:18px;
+	height:100%;
+}
+#image_main {
+	vertical-align:top;
+	text-align:center;
+	width:100%;
+}
+#topic {
+color:white;
+}
+#search{
+	height:40px;
+	width:400px;
+	font-family:'Serif Italic';
+	font-size:18px;
+}
+#button2 {
+	height:30px;
+	width:200px;
+	font-family:'Serif Italic';
+	font-size:18px;
+}
+
+	</style>
+</head>
+<body>
+<div id = "all_content">
+	<div id="top_menu">
+		<ul>
+			<li class="top_menu_li" ><a href="https://www.mos.ru/"><img src="system-logo.png" alt="mos.ru" title="mos.ru" id="imglogo"/></a></li>
+			<li class="top_menu_li"><a href="/page_after_login/page_after_login_worker.html">Главная</a></li>
+			<li class="top_menu_li"><a href="/page_podbor_forworkers/page_podbor_forworkers.html">Подбор животных (соц)</a></li>
+			<li class="top_menu_li"><a href="/page_podbor_forworkers2/page_podbor_forworkers2.html">Подбор животных (все)</a></li>
+			<li class="top_menu_li"><a href="/page_insert_animals/page_insert_animals.html">Вставка животных</a></li>
+			<li class="top_menu_li"><a href="/page_delete_animals/page_delete_animals.html">Удаление животных</a></li>
+			<li class="top_menu_li"><a href="/page_applications/page_applications.html">Отчёты</a></li>
+		</ul>
+	</div>	
+
+	<div id="middle">
+		<p></p>
+		<p>В данном окне Вы можете добавить поступившее в приют животное</p>
+		<form name="search" method="post" action="insert.php">
+			<p><input type="text" name="a1" id="search" placeholder="п/п"> </p>
+			<p><input type="text" name="a2" id="search" placeholder="карточка учета животного №"> </p>
+			<p><input type="text" name="a3" id="search" placeholder="вид"> </p>
+			<p><input type="text" name="a4" id="search" placeholder="возраст, год"> </p>
+			<p><input type="text" name="a5" id="search" placeholder="вес, кг"> </p>
+			<p><input type="text" name="a6" id="search" placeholder="кличка"> </p>
+			<p><input type="text" name="a7" id="search" placeholder="пол"> </p>
+			<p><input type="text" name="a8" id="search" placeholder="порода"> </p>
+			<p><input type="text" name="a9" id="search" placeholder="окрас"> </p>
+			<p><input type="text" name="a10" id="search" placeholder="шерсть"> </p>
+			<p><input type="text" name="a11" id="search" placeholder="уши"> </p>
+			<p><input type="text" name="a12" id="search" placeholder="хвост"> </p>
+			<p><input type="text" name="a13" id="search" placeholder="размер"> </p>
+			<p><input type="text" name="a14" id="search" placeholder="особые приметы"> </p>
+			<p><input type="text" name="a15" id="search" placeholder="Вольер №"> </p>
+			<p><input type="text" name="a16" id="search" placeholder="идентификационная метка"> </p>
+			<p><input type="text" name="a17" id="search" placeholder="дата стерилизации"> </p>
+			<p><input type="text" name="a18" id="search" placeholder="ф.и.о. ветеринарного врача"> </p>
+			<p><input type="text" name="a19" id="search" placeholder="Социализировано (да/нет)"> </p>
+			<p><input type="text" name="a20" id="search" placeholder="заказ-наряд / акт о поступлении животного №"> </p>
+			<p><input type="text" name="a21" id="search" placeholder="заказ-наряд дата/ акт о поступлении животного, дата"> </p>
+			<p><input type="text" name="a22" id="search" placeholder="административный округ"> </p>
+			<p><input type="text" name="a23" id="search" placeholder="акт отлова №"> </p>
+			<p><input type="text" name="a24" id="search" placeholder="адрес места отлова"> </p>
+			<p><input type="text" name="a25" id="search" placeholder="юридическое лицо"> </p>
+			<p><input type="text" name="a26" id="search" placeholder="адрес"> </p>
+			<p><input type="text" name="a27" id="search" placeholder="телефон"> </p>
+			<p><input type="text" name="a28" id="search" placeholder="ф.и.о. опекунов"> </p>
+			<p><input type="text" name="a29" id="search" placeholder="адрес2"> </p>
+			<p><input type="text" name="a30" id="search" placeholder="телефон2"> </p>
+			<p><input type="text" name="a31" id="search" placeholder="физическое лицо ф.и.о."> </p>
+			<p><input type="text" name="a32" id="search" placeholder="паспорт РФ серия номер"> </p>
+			<p><input type="text" name="a33" id="search" placeholder="выдан"> </p>
+			<p><input type="text" name="a34" id="search" placeholder="дата выдачи"> </p>
+			<p><input type="text" name="a35" id="search" placeholder="адрес регистрации"> </p>
+			<p><input type="text" name="a36" id="search" placeholder="телефон3"> </p>
+			<p><input type="text" name="a37" id="search" placeholder="дата поступления в приют"> </p>
+			<p><input type="text" name="a38" id="search" placeholder="акт №"> </p>
+			<p><input type="text" name="a39" id="search" placeholder="дата выбытия из приюта"> </p>
+			<p><input type="text" name="a40" id="search" placeholder="причина выбытия"> </p>
+			<p><input type="text" name="a41" id="search" placeholder="акт/договор №"> </p>
+			<p><input type="text" name="a42" id="search" placeholder="адрес приюта"> </p>
+			<p><input type="text" name="a43" id="search" placeholder="эксплуатирующая организация"> </p>
+			<p><input type="text" name="a44" id="search" placeholder="ф.и.о. руководителя приюта"> </p>
+			<p><input type="text" name="a45" id="search" placeholder="ф.и.о. сотрудника по уходу за животным"> </p>
+			<p><input type="text" name="a46" id="search" placeholder="№ п/п 2"> </p>
+			<p><input type="text" name="a47" id="search" placeholder="дата"> </p>
+			<p><input type="text" name="a48" id="search" placeholder="название препарата"> </p>
+			<p><input type="text" name="a49" id="search" placeholder="доза"> </p>
+			<p><input type="text" name="a50" id="search" placeholder="№ п/п"> </p>
+			<p><input type="text" name="a51" id="search" placeholder="дата2"> </p>
+			<p><input type="text" name="a52" id="search" placeholder="вид вакцины"> </p>
+			<p><input type="text" name="a53" id="search" placeholder="№ серии"> </p>
+			<p><input type="text" name="a54" id="search" placeholder="дата осмотра"> </p>
+			<p><input type="text" name="a55" id="search" placeholder="анамнез"> </p>
+			<input type="submit" value="Добавить данные в базу" name="button2" id="button2"></p>
+		</form></div>
+	
+	
+</div>
+</body>
+</html>

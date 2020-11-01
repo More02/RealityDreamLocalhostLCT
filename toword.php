@@ -23,7 +23,9 @@
 
 require_once('vendor/autoload.php'); // ставится ТОЛЬКО через Composer!
 $_doc = new \PhpOffice\PhpWord\TemplateProcessor('animals.docx');
-
+for ($i=0; $i < 5; $i++) { 
+	echo "\t";
+}
 $_doc->setValue("п/п", "1");
 $_doc->setValue("карточка_учета_животного_№", "1665з-20");
 $_doc->setValue("вид", "собака");

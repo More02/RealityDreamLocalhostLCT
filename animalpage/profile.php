@@ -17,7 +17,7 @@
 <body>
 <div id = "all_content">
 	<div id="top_menu">
-		<ul>
+		<ul></ul>ul>
 			<li class="top_menu_li" ><a href="https://www.mos.ru/"><img src="system-logo.png" alt="mos.ru" title="mos.ru" id="imglogo"/></a></li>
 			<li class="top_menu_li"><a href="/page_after_login/page_after_login.html">Главная</a></li>
 			<li class="top_menu_li"><a href="/page_podbor/page_podbor.html">Подбор животных</a></li>
