@@ -1,0 +1,8 @@
+POST / HTTP/1.0\r\n
+Host: http://localhost:12116/
+Referer: http://localhost:12116/post.php?id=1\r\n
+Cookie: income=1\r\n
+Content-Type: application/x-www-form-urlencoded\r\n
+Content-Length: 35\r\n
+\r\n
+id=1

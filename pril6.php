@@ -1,5 +1,7 @@
 <html>
-
+<?php 
+require_once('ConnectDB.php');
+?>
 <head>
 	<meta content="text/html; charset=UTF-8" http-equiv="content-type">
 	<style type="text/css">
@@ -11,10 +13,16 @@
 	<div class="c44" style="width:800; height:1331; background-color:white;   margin: auto;">
 		<p class="c8"><span class="c34"></span></p>
 		<p class="c23"><span class="c7">ОТЧЕТ</span></p>
-		<p class="c41"><span class="c7">о мониторинге животных в городских приютах </span><span class="c18">         </span></p>
-		<p class="c55"><span class="c7">(</span><span class="c18">                                 </span><span class="c7">административного округа г.Москвы)  с «</span><span class="c18">         </span><span class="c7">»</span><span class="c18">         </span><span class="c7">20</span><span class="c18">         </span><span class="c7">г. по «</span><span class="c18">                 </span><span class="c7">»</span><span class="c18">         </span><span class="c7">20</span><span class="c18">         </span><span class="c7">г.</span></p>
+		<p class="c41"><span class="c7">о мониторинге животных в городских приютах </span><span class="c18">СЗАО</span></p> <?php
+		$today = getdate(); ?>
+		<p class="c55"><span class="c7">( </span><span class="c18">Северо-Западного</span><span class="c7"> административного округа г.Москвы)  с «</span><span class="c18"><?php echo $today['mday'] ?></span><span class="c7">»</span><span class="c18"><?php echo " ",$today['mon']-1," " ?></span><span class="c7"><?php echo $today['year'] ?></span><span class="c18"></span><span class="c7">г. по «</span><span class="c18"><?php echo $today['mday'] ?></span><span class="c7">»</span><span class="c18"><?php echo " ",$today['mon']," " ?></span><span class="c7"><?php echo $today['year'] ?></span><span class="c18"></span><span class="c7">г.</span></p>
 		<p class="c2"><span class="c21"></span></p>
 		<p class="c28"><span class="c46"></span></p><a id="t.a485f6b250a921ba6ab8fe093ac250af42c02e46"></a><a id="t.0"></a>
+		<?php 
+		$sql = "SELECT * FROM `TABLE 1` WHERE `административный округ` LIKE 'СЗАО' ";
+		$result = mysqli_query($connect, $sql); 
+		$row = mysqli_fetch_assoc($result)
+		?>
 		<table class="c52">
 			<tbody>
 				<tr class="c33">
@@ -73,8 +81,9 @@
 					</td>
 				</tr>
 				<tr class="c38">
-					<td class="c16" colspan="1" rowspan="1">
-						<p class="c0"><span class="c4"></span></p>
+					<td class="c16" height = 65.0
+					 colspan="1" rowspan="1">
+						<p class="c0"><span class="c4"></span><?php echo $row['адрес приюта'] ?></p>
 					</td>
 					<td class="c11" colspan="1" rowspan="1">
 						<p class="c0"><span class="c4"></span></p>
